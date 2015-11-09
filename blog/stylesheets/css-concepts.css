@@ -42,26 +42,9 @@ ul {
   font-weight: bold;
 }
 
-main {
-  text-align: center;
-
+.before {
+  margin-bottom: 10px;
 }
-
-main ul {
-list-style-type: none;
-
-}
-
-main ul li a {
-  text-decoration: none;
-  color: #EF6D3B;
-  font-size: 20px;
-
-}
-main h3{
-  font-size: 30px;
-}
-
 footer {
   background-color: #3F2860;
   height: 30px;
