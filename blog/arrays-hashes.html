@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alex's DBC Journey</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesheets/css-concepts.css">
+</head>
+  <body>
+    <header>
+      <nav>
+        <nav>
+          <ul class="home">
+            <li><a id = "home" href="#">Alex Mitzman</a></li>
+          </ul>
+
+          <ul class="nav">
+            <li><a class ="menu" id="about" href="#">About Me</a></li>
+            <li><a class="menu" id= "projects"href="#">Projects</a></li>
+            <li><a class="menu" id="blog"href="blog-template.html">Blog</a></li>
+            <li><a class="menu" id="resume"href="#">Resume</a></li>
+            <li><a class="menu" id="contact"href="#">Contact</a></li>
+      </nav>
+    </nav>
+    </header>
+
+  <main>
+    <h1>Onto Ruby</h1>
+    <h2>Arrays and Hashes</h2>
+    <h4>November 15th, 2015</h4>
+
+    <article>
+      <p>
+        These first four weeks has flown by.  After the past couple of weeks focused on HTML, CSS and web design we’ve totally switched gears to Ruby.  The last time I had touched Ruby was right before my interview for DBC and it all started to come back to me.  One of the big concepts that are widely used in Ruby are Array and Hashes.
+      </p>
+      <p>Array and Hashes are very similar and that they are both ways to store a collection of data.  For example, they can store each grade for each student.  An Array and Hash would like the following: </p>
+      <p>Array = [[“Alex”, 100], [“Joey”, 85]]</p>
+      <p>grades = Hash.new<br>
+grades[“Alex”] = 100<br>
+grades[“Joey”] = 85
+</p>
+<p>They both are able to store the information, but the greatest difference is retrieving that information.  Arrays are an integer-indexed collection of data, so each element is associated with an integer.  Whereas, for a Hash, each value is associated with a Key.  In this instance, the key is the students name and is assigned a value.  So if we wanted to retrieve Joey’s grade we would do the following:</p>
+<p>puts array[1][1]</p>
+<p>puts grades[“Joey”]</p>
+<p>They both will return 85.  Now this wasn’t too bad for the array, but just imagine if it was a class full of 30 students.  It would be extremely difficult to retrieve a students information, because it would take time to look up which index to use.  For the Hash, all that we need to know is the key and in this case would be the student’s name.</p>
+<p>So, I think it would be best to use Hashes when we need to create a large collection of data that we will be needing to retrieve often because of the much easier accessibility of values compared to arrays.</p>
+
+    </article>
+
+  </main>
+   <footer>
+        <nav>
+          <a href="https://www.facebook.com/amitzman">Facebook</a>
+          <a href="https://www.linkedin.com/pub/alex-mitzman/1b/1a8/439">LinkedIn</a>
+          <a href="https://twitter.com/the_real_mitz">Twitter</a>
+          <a href="https://github.com/amitzman">GitHub</a>
+        </nav>
+
+      </footer>
+</body>
+</html>
+
+
