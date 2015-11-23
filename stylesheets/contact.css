@@ -11,7 +11,6 @@ header {
   border-bottom: 5px solid #3F2860;
   width:960px;
 
-
 }
 
 ul {
@@ -33,17 +32,11 @@ ul {
   font-size: 20px;
 }
 
-#projectslist {
-  text-decoration: none;
-  list-style-type: none;
-  position: absolute;
-  margin-top: 180px;
-  margin-left: 200px;
-}
 
 .nav {
   list-style-type: none;
-  float: right;
+  float:right;
+  margin-top: -35px;
 }
 
 .nav li {
@@ -57,23 +50,69 @@ ul {
   font-weight: bold;
 }
 
-figure {
-  background-color: #90C5A9;
-  box-shadow: 10px 10px 5px;
-  width:900px;
-  height:400px;
-
-}
-
-figcaption {
-  float: right;
+main h2 {
   text-align: center;
-  padding-top: 100px;
-  padding-right: 200px;
+}
+
+input, textarea {
+  padding-right: 10px;
+  border: 1px solid #E5E5E5;
+  width: 200px;
+  color: #999999;
+}
+
+textarea{
+height:150px;
+width:400px;
+max-width: 400px;
+}
+
+.form label {
+  margin-left: 10px;
+  color:#999999;
+}
+
+.submit input{
+width:100px;
+height:40px;
+background-color:#474E69;
+color: white;
+}
+
+main {
+  width:900px;
+  margin-top: 50px;
+  height: 500px;
 
 }
 
+form {
+  width:50%;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+aside {
+  margin-left: 700px;
+  position: absolute;
+  margin-top: -430px;
+}
+
+.contactlist {
+  list-style-type: none;
+}
+
+.contactlist li {
+  padding-left: 10px;
+}
+
+aside img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
 
 footer {
   background-color: #3F2860;
