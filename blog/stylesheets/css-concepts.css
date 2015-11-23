@@ -2,9 +2,14 @@ html {
   background-color: #90C5A9;
 }
 
+body {
+  width:1000px;
+}
+
 header {
   background-color: #90C5A9;
   border-bottom: 5px solid #3F2860;
+  width:960px;
 }
 
 ul {
@@ -16,19 +21,19 @@ ul {
 }
 
 .home li {
-  display: inline;
+  /*display: inline;*/
   padding-top: 0px
 }
 #home {
   text-decoration: none;
   color: #EF6D3B;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .nav {
   list-style-type: none;
-  padding-left: 600px;
+  float:right;
 }
 
 .nav li {
@@ -65,3 +70,7 @@ footer nav a {
   padding: 25px;
   font-weight: bold;
 }
+
+ #enumerable {
+  height:700px;
+ }
