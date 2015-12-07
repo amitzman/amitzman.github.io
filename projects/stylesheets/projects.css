@@ -2,18 +2,16 @@ html {
   background-color: #90C5A9;
 }
 
-body {
-  width:1000px;
-}
-
-.jsbod{
-  height: 800px;
-}
+/*body {
+  width: 1000px;
+}*/
 
 header {
   background-color: #90C5A9;
   border-bottom: 5px solid #3F2860;
-  width:960px;
+/*  width:960px;*/
+
+
 }
 
 ul {
@@ -25,7 +23,7 @@ ul {
 }
 
 .home li {
-  /*display: inline;*/
+ /* display: inline-block;*/
   padding-top: 0px
 }
 #home {
@@ -35,9 +33,26 @@ ul {
   font-size: 20px;
 }
 
+.projectmain h2{
+  text-align: center;
+}
+
+.projectmain p {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#projectslist {
+  text-decoration: none;
+  list-style-type: none;
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 200px;
+}
+
 .nav {
   list-style-type: none;
-  float:right;
+  float: right;
 }
 
 .nav li {
@@ -51,9 +66,24 @@ ul {
   font-weight: bold;
 }
 
-.before {
-  margin-bottom: 10px;
+figure {
+  background-color: #90C5A9;
+  box-shadow: 10px 10px 5px;
+  width:900px;
+  height:400px;
+
 }
+
+figcaption {
+  float: right;
+  text-align: center;
+  padding-top: 100px;
+  padding-right: 200px;
+
+}
+
+
+
 footer {
   background-color: #3F2860;
   height: 30px;
@@ -62,6 +92,7 @@ footer {
   width: 100%;
   margin-left: -8px;
   margin-right: -8px;
+ /* width:960px;*/
 }
 
 footer nav {
@@ -74,11 +105,3 @@ footer nav a {
   padding: 25px;
   font-weight: bold;
 }
-
- #enumerable {
-  height:700px;
- }
-
- #class {
-  height: 1300px;
- }
