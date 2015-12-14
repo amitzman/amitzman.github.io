@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/cheat-sheet.css">
+    <title>SQL Cheat Sheet</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>DBMS: Beginners SQL Command Cheat Sheet</h1>
+      <p>Database Management Systems is the software that handles the storage, retrieval, and updating of data in a computer system.  Structured Query Language (SQL) is the standard language used for DBMS.  This cheat-sheet summarizes frequently used commands for a single table</p>
+    </header>
+
+    <section class="column-1">
+
+      <article>
+        <h2>CREATING TABLES AND ADDING INFO TO THE TABLE</h2>
+        <p> To see a summary of each command, click it.</p>
+
+        <details>
+          <summary><code><strong>CREATE TABLE</strong> celebs(id INTGER, name TEXT, age INTEGER);</code></summary>
+          <p>CREATE TABLE will create new a table.  In this example we create a new table called celebs with 'id', 'name', and 'age' as the columns</p>
+        </details>
+
+        <details>
+          <summary><code><strong>INSERT INTO</strong> celebs(id,name,age)VALUES(1,'Alex Mitzman', 26);</code></summary>
+          <p>INSERT INTO will insert a new row into the table.</p>
+        </details>
+      </article>
+
+      <article>
+        <h2>MAKING CHANGES TO THE TABLE</h2>
+        <p>commands that will modify tables</p>
+
+        <details>
+          <summary><code><strong>ALTER TABLE</strong> celebs ADD COLUMN twitter_handle TEXT;</code></summary>
+          <p>This adds a new column to the table.  In this example 'celebs' is the table and 'twitter_handle' will be the column added to it.</p>
+        </details>
+
+        <details>
+          <summary><code><strong>DELETE FROM</strong> celebs WHERE twitter_handle IS NULL;</code></summary>
+          <p>This will delete one or more rows.  In this example it will delete all rows from the 'celebs' table that don't have a twitter_handle.</p>
+        </details>
+
+        <details>
+          <summary><code><strong>UPDATE</strong> celebs SET age = 30 WHERE id =1;</code></summary>
+          <p>UPDATE will edit a row in the table.  In this example it will change the age to 30 for id 1 in the table 'celebs'.</p>
+        </details>
+      </article>
+
+      <article>
+        <h2>RETRIEVE DATA</h2>
+        <p>How to return data from a table</p>
+
+        <details>
+          <summary><code><strong>SELECT</strong> name FROM celebs;</code></summary>
+          <p>This will select all of the 'names' column for each row from the table 'celebs'</p>
+        </details>
+
+        <details>
+          <summary><code><strong>SELECT DISTINCT</strong> genre FROM movies;</code></summary>
+          <p>Used to return a unique value.  It filters all duplicate values.  In the example, it will return all of the genres once from the 'movies' table</p>
+        </details>
+      </article>
+
+      <article>
+        <h2>CONDITIONAL OPERATORS</h2>
+        <p>Operators used to find more specific data to return</p>
+
+        <details>
+          <summary><code>SELECT * FROM movies WHERE name <strong>BETWEEN</strong> 'A' AND 'J';</code></summary>
+          <p>Used to filter within a certain range.  In this instance it will return all of the rows data where the names are between 'A' and 'J'</p>
+        </details>
+
+        <details>
+          <summary><code>SELECT * FROM movies WHERE name <strong>LIKE</strong> 'Se_en';</code></summary>
+          <p>Useful operator when you want to compare similar values. In this example it returned all of the rows data where name is like 'Se_en'('_' is a wildcard character).  It would return the rows for 'Seven' and 'Se7en'</p>
+        </details>
+
+        <details>
+          <summary><code>SELECT * FROM movies WHERE rating <strong>></strong> 8;</code></summary>
+          <p>Equal(=), not equal(!=), greater than(>), less than(<), greater than or equal to(>=), and less than or equal to.(<=)</p>
+        </details>
+
+      </article>
+    </section>
+
+    <section class="column-2">
+      <article>
+        <h2>HOW TO ORDER DATA</h2>
+        <p>Used to sort the data in ascending or descending order</p>
+
+        <details>
+          <summary><code>SELECT * FROM fake_apps WHERE downloads > 2000 <strong>ORDER BY</strong> price ASC;</code></summary>
+          <p>This will return every field in which the downloads are greater than 2000 and it will be sorted by price in ascending order.</p>
+        </details>
+
+      </article>
+      <article>
+        <h2>LIST OF AGGREGATE FUNCTIONS</h2>
+        <p>SQL aggregate functions return a single value, calculated from values in a column</p>
+          <code>SELECT column_name, AGGREGATE FUNCTION(column_name) FROM table_name;</code>
+        <p>
+
+        <details>
+          <summary><code><strong>COUNT()</strong></code></summary>
+          <p>Returns a number of rows</p>
+        </details>
+
+        <details>
+          <summary><code><strong>AVG()</strong></code></summary>
+          <p>Returns the average value</p>
+        </details>
+
+        <details>
+          <summary><code><strong>MAX()</strong></code></summary>
+          <p>Returns the largest value</p>
+        </details>
+
+        <details>
+          <summary><code><strong>MIN()</strong></code></summary>
+          <p>Returns the smallest value</p>
+        </details>
+
+        <details>
+          <summary><code><strong>SUM()</strong></code></summary>
+          <p>Returns the sum</p>
+        </details>
+
+        <details>
+          <summary><code><strong>ROUND()</strong></code></summary>
+          <p>Rounds a numeric field to a specified number of decimals</p>
+        </details>
+      </article>
+
+      <article>
+        <h2>GROUPING AGGREGATE FUNCTIONS</h2>
+        <p>The GROUP BY command which can only be used with aggregate functions</p>
+
+        <details>
+          <summary><code>SELECT price, COUNT(*) FROM fake_apps WHERE downloads > 2000 <strong>GROUP BY</strong> price;</code></summary>
+          <p>This will return a count of each price where the download value is greater than 2000</p>
+        </details>
+
+      </article>
+
+      <article>
+        <h2>WILDCARDS</h2>
+        <p>Powerful symbols that can represent many characters.</p>
+
+        <details>
+          <summary><code>SELECT <strong>*</strong> FROM celebs
+          </code></summary>
+          <p>* Wildcard that allows you to select every column in a table</p>
+        </details>
+
+        <details>
+          <summary><code>SELECT * FROM movies WHERE name LIKE 'Se<strong>_</strong>en';</code></summary>
+          <p>'_' allows it to be any character.</p>
+        </details>
+
+        <details>
+          <summary><code>SELECT * FROM movies WHERE name LIKE '%man%';</code></summary>
+          <p>A% - matches that begin with 'A'<br>
+            %a - will that match that end with 'a'<br>
+            %man% - will match anything that contains 'man'
+          </p>
+        </details>
+      </article>
+    </section>
+  </body>
+</html>
+
+
+<!-- Reflection -->
+<!-- What content was solidified in the process of completing this challenge?
+
+  More html tags, like the detail tag.  Which creates an interactive widget that can hide and open info when clicked on.
+
+What content do you feel a bit fuzzy on still?
+
+  Just all the sorts of tags out there for html.  When already using base templates to create pages like we’ve been doing with our web page pages, I’ve needed some refreshing on all the semantic tags.
+
+What was the most difficult part of this challenge?
+
+  Nothing was too difficult.  Used a previous format used before which made it easier.
+
+Has your ability to add CSS to format and position objects improved since week 3?
+
+  I think it has gotten a little better.  I’ve read up on using a fixed width layout on the page.  This has helped me sizing up the sections to get them fit better. -->
