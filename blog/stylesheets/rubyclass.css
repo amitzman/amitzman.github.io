@@ -1,0 +1,57 @@
+.nav li {
+  display: inline;
+  padding-right: 25px;
+}
+
+.nav li a {
+  color: #00008B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.jumbotron {
+  background-image:url('https://raw.githubusercontent.com/amitzman/amitzman.github.io/boot/imgs/monk.jpg');
+  height: 1500px;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.jumbotron .container {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    position: relative;
+    margin-top: -10px;
+    text-align: center;
+
+}
+
+.jumbotron .container li {
+  padding-top: 10px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+footer {
+  height: 30px;
+  position: relative;
+  /*bottom: 0px;*/
+  /*width: 100%;*/
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: 100px;
+  border-top: 1px solid #00008B;
+}
+
+footer nav {
+  text-align: center;
+}
+
+footer nav a {
+  text-decoration: none;
+  padding: 25px;
+  font-weight: bold;
+  color: #00008B;
+}
