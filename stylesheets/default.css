@@ -1,15 +1,13 @@
-html {
+/*html {
   background-color: #90C5A9;
 }
 
-body {
-  width: 1000px;
-}
+
 
 header {
   background-color: #90C5A9;
   border-bottom: 5px solid #3F2860;
-  width:960px;
+
 
 
 }
@@ -23,7 +21,7 @@ ul {
 }
 
 .home li {
- /* display: inline-block;*/
+  display: inline-block
   padding-top: 0px
 }
 #home {
@@ -95,4 +93,13 @@ footer nav a {
   text-decoration: none;
   padding: 25px;
   font-weight: bold;
+}*/
+
+.nav li {
+  display: inline-block;
+  padding-right: 25px;
+}
+
+.jumbotron {
+  background-image:url('');
 }
