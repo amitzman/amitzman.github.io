@@ -3,28 +3,28 @@
 <head>
   <title>Alex's DBC Journey</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="stylesheets/css-concepts.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/js.css">
 </head>
   <body class ="jsbod">
-    <header>
-      <nav>
-        <nav>
-          <ul class="home">
-            <li><a id = "home" href="../">Alex Mitzman</a></li>
-          </ul>
-
-          <ul class="nav">
-            <li><a class ="menu" id="about" href="../about-me.html">About Me</a></li>
-            <li><a class="menu" id= "projects"href="#">Projects</a></li>
-            <li><a class="menu" id="blog"href="../blog">Blog</a></li>
-            <li><a class="menu" id="resume"href="#">Resume</a></li>
-            <li><a class="menu" id="contact"href="../contact.html">Contact</a></li>
-          </ul>
+    <header class="nav">
+      <nav class = "container">
+        <ul class="pull-left">
+          <li><a href="#">Alex Mitzman</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="http://amitzman.github.io/about-me.html">About me</a></li>
+          <li><a href="http://amitzman.github.io/projects/">Projects</a></li>
+          <li><a href="http://amitzman.github.io/blog/">Blog</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="http://amitzman.github.io/contact.html">Contact</a></li>
+        </ul>
       </nav>
-    </nav>
     </header>
-
-  <main>
+  <main class = 'jumbotron'>
+    <section class = 'container'>
     <h1>Onto JavaScript</h1>
     <h2>More Loops!</h2>
     <h4>December 6th, 2015</h4>
@@ -47,16 +47,17 @@
 
       <p>Whereas for Ruby, the .each do iterator implies that it will start from the beginning, end once each element has been iterated, and increment by one.  Even though there might be more syntax to the JavaScript loop, I feel like I have more control when it comes to creating the loop as opposed to the .each in Ruby.</p>
     </article>
+  </section>
   </main>
-   <footer>
-        <nav>
-          <a href="https://www.facebook.com/amitzman">Facebook</a>
-          <a href="https://www.linkedin.com/pub/alex-mitzman/1b/1a8/439">LinkedIn</a>
-          <a href="https://twitter.com/the_real_mitz">Twitter</a>
-          <a href="https://github.com/amitzman">GitHub</a>
-        </nav>
+    <footer class ='nav'>
+      <nav class = "container">
+        <a href="https://www.facebook.com/amitzman">Facebook</a>
+        <a href="https://www.linkedin.com/pub/alex-mitzman/1b/1a8/439">LinkedIn</a>
+        <a href="https://twitter.com/the_real_mitz">Twitter</a>
+        <a href="https://github.com/amitzman">GitHub</a>
+      </nav>
 
-      </footer>
+    </footer>
 </body>
 </html>
 

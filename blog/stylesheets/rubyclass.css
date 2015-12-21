@@ -10,8 +10,8 @@
 }
 
 .jumbotron {
-  background-image:url('https://raw.githubusercontent.com/amitzman/amitzman.github.io/boot/imgs/crater.jpg');
-  height: 500px;
+  background-image:url('https://raw.githubusercontent.com/amitzman/amitzman.github.io/boot/imgs/monk.jpg');
+  height: 1500px;
   background-repeat: none;
   background-size: cover;
 }
@@ -24,7 +24,14 @@
     filter: alpha(opacity=60);
     position: relative;
     margin-top: -10px;
+    text-align: center;
 
+}
+
+.jumbotron .container li {
+  padding-top: 10px;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 footer {

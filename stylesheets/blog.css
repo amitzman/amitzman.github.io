@@ -1,75 +1,48 @@
-html {
-  background-color: #90C5A9;
-}
-
-header {
-  background-color: #90C5A9;
-  border-bottom: 5px solid #3F2860;
-}
-
-ul {
-  display: inline-block;
-}
-
-.home {
-  list-style-type: none;
-}
-
-.home li {
-  display: inline;
-  padding-top: 0px
-}
-#home {
-  text-decoration: none;
-  color: #EF6D3B;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.nav {
-  list-style-type: none;
-  padding-left: 600px;
-}
-
 .nav li {
-  padding-right: 25px;
   display: inline;
+  padding-right: 25px;
 }
 
 .nav li a {
-  color: #EF6D3B;
+  color: #00008B;
   text-decoration: none;
   font-weight: bold;
 }
 
-main {
-  text-align: center;
+.jumbotron {
+  background-image:url('https://raw.githubusercontent.com/amitzman/amitzman.github.io/boot/imgs/desert.jpg');
+  height: 500px;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.jumbotron .container {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    position: relative;
+    margin-top: -10px;
+    text-align: center;
 
 }
 
-main ul {
-list-style-type: none;
-
-}
-
-main ul li a {
+.jumbotron .container li {
+  padding-top: 10px;
+  list-style-type: none;
   text-decoration: none;
-  color: #EF6D3B;
-  font-size: 20px;
-
-}
-main h3{
-  font-size: 30px;
 }
 
 footer {
-  background-color: #3F2860;
   height: 30px;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
+  position: relative;
+  /*bottom: 0px;*/
+  /*width: 100%;*/
   margin-left: -8px;
   margin-right: -8px;
+  margin-top: 100px;
+  border-top: 1px solid #00008B;
 }
 
 footer nav {
@@ -77,8 +50,8 @@ footer nav {
 }
 
 footer nav a {
-  color: yellow;
   text-decoration: none;
   padding: 25px;
   font-weight: bold;
+  color: #00008B;
 }
